@@ -321,7 +321,6 @@ namespace FestaGameOverlay
             this.Name = "CPanel";
             this.ShowIcon = false;
             this.Text = "오버레이 제어판";
-            this.Load += new System.EventHandler(this.CPanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

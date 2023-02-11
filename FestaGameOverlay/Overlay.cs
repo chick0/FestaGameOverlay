@@ -17,10 +17,6 @@ namespace FestaGameOverlay
             One = playerList[0];
             Two = playerList[1];
 
-            // 승리 표시 초기화
-            Player1Status.Image = null;
-            Player2Status.Image = null;
-
             UpdateLabel();
         }
 
@@ -32,6 +28,10 @@ namespace FestaGameOverlay
 
             Player1.Text = One?.Name;
             Player2.Text = Two?.Name;
+
+            // 승리 표시 초기화
+            Player1Status.Image = null;
+            Player2Status.Image = null;
         }
 
         Player? One;
@@ -64,11 +64,13 @@ namespace FestaGameOverlay
 
         private void Player1Win_Click(object sender, EventArgs e)
         {
+            UpdateLabel();
             Player1Status.Image = Properties.Resources.Winner;
         }
 
         private void Player2Win_Click(object sender, EventArgs e)
         {
+            UpdateLabel();
             Player2Status.Image = Properties.Resources.Winner;
         }
     }

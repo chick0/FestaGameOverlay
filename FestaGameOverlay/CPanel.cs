@@ -224,16 +224,5 @@ namespace FestaGameOverlay
             Program.OpenedOverlay = new Overlay();
             Program.OpenedOverlay.Show();
         }
-
-        private void CPanel_Load(object sender, EventArgs e)
-        {
-            Font font = FontManager.GetFont(FontType.Regular, 15f);
-
-            PlayerA.Font = font;
-            PlayerB.Font = font;
-            PlayerC.Font = font;
-            PlayerD.Font = font;
-            PlayerE.Font = font;
-        }
     }
 }

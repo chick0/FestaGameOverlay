@@ -9,24 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\NEXON Lv2 Gothic Bold.ttf" />
-    <None Remove="Resources\NEXON Lv2 Gothic Light.ttf" />
-    <None Remove="Resources\NEXON Lv2 Gothic.ttf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Resources\NEXON Lv2 Gothic Bold.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\NEXON Lv2 Gothic Light.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\NEXON Lv2 Gothic.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -42,6 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Resources\NEXON Lv2 Gothic Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\NEXON Lv2 Gothic Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\NEXON Lv2 Gothic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\NEXON_Lv2_Gothic_LICENSE.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
