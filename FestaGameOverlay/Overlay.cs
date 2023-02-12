@@ -23,8 +23,7 @@ namespace FestaGameOverlay
         private void UpdateLabel()
         {
             Stage.Text = Program.Stage;
-            Match.Text = Program.Match;
-            MatchDetail.Text = Program.MatchDetail;
+            Match.Text = Program.Match + " " + Program.MatchDetail;
 
             Player1.Text = One?.Name;
             Player2.Text = Two?.Name;
