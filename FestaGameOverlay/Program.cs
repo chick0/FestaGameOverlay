@@ -1,6 +1,6 @@
 namespace FestaGameOverlay
 {
-    class Player
+    internal class Player
     {
         public string Name;
         public bool Status;
@@ -28,8 +28,10 @@ namespace FestaGameOverlay
 
         public static Overlay? OpenedOverlay = null;
 
+        public static FontManager fontManager = new();
+
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new CPanel());

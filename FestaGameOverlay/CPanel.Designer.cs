@@ -54,7 +54,7 @@ namespace FestaGameOverlay
             // 
             // StageLabel
             // 
-            this.StageLabel.Font = new System.Drawing.Font("넥슨Lv2고딕", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StageLabel.Font = new System.Drawing.Font("Pretendard", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.StageLabel.Location = new System.Drawing.Point(12, 11);
             this.StageLabel.Name = "StageLabel";
             this.StageLabel.Size = new System.Drawing.Size(125, 50);
@@ -64,7 +64,7 @@ namespace FestaGameOverlay
             // 
             // Stage
             // 
-            this.Stage.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Stage.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Stage.Location = new System.Drawing.Point(152, 22);
             this.Stage.Name = "Stage";
             this.Stage.Size = new System.Drawing.Size(173, 30);
@@ -74,7 +74,7 @@ namespace FestaGameOverlay
             // 
             // Match
             // 
-            this.Match.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Match.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Match.Location = new System.Drawing.Point(152, 74);
             this.Match.Name = "Match";
             this.Match.Size = new System.Drawing.Size(173, 30);
@@ -84,7 +84,7 @@ namespace FestaGameOverlay
             // 
             // MatchLabel
             // 
-            this.MatchLabel.Font = new System.Drawing.Font("넥슨Lv2고딕", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MatchLabel.Font = new System.Drawing.Font("Pretendard", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MatchLabel.Location = new System.Drawing.Point(12, 61);
             this.MatchLabel.Name = "MatchLabel";
             this.MatchLabel.Size = new System.Drawing.Size(125, 50);
@@ -94,7 +94,7 @@ namespace FestaGameOverlay
             // 
             // MatchDetail
             // 
-            this.MatchDetail.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MatchDetail.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MatchDetail.Location = new System.Drawing.Point(343, 74);
             this.MatchDetail.Name = "MatchDetail";
             this.MatchDetail.Size = new System.Drawing.Size(111, 30);
@@ -104,7 +104,7 @@ namespace FestaGameOverlay
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("넥슨Lv2고딕", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Pretendard", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(12, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 50);
@@ -114,7 +114,7 @@ namespace FestaGameOverlay
             // 
             // PlayerA
             // 
-            this.PlayerA.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerA.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerA.Location = new System.Drawing.Point(152, 176);
             this.PlayerA.Name = "PlayerA";
             this.PlayerA.Size = new System.Drawing.Size(173, 30);
@@ -123,7 +123,7 @@ namespace FestaGameOverlay
             // 
             // PlayerB
             // 
-            this.PlayerB.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerB.Location = new System.Drawing.Point(152, 216);
             this.PlayerB.Name = "PlayerB";
             this.PlayerB.Size = new System.Drawing.Size(173, 30);
@@ -132,7 +132,7 @@ namespace FestaGameOverlay
             // 
             // PlayerD
             // 
-            this.PlayerD.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerD.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerD.Location = new System.Drawing.Point(152, 296);
             this.PlayerD.Name = "PlayerD";
             this.PlayerD.Size = new System.Drawing.Size(173, 30);
@@ -141,7 +141,7 @@ namespace FestaGameOverlay
             // 
             // PlayerC
             // 
-            this.PlayerC.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerC.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerC.Location = new System.Drawing.Point(152, 256);
             this.PlayerC.Name = "PlayerC";
             this.PlayerC.Size = new System.Drawing.Size(173, 30);
@@ -150,7 +150,7 @@ namespace FestaGameOverlay
             // 
             // PlayerE
             // 
-            this.PlayerE.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerE.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerE.Location = new System.Drawing.Point(152, 336);
             this.PlayerE.Name = "PlayerE";
             this.PlayerE.Size = new System.Drawing.Size(173, 30);
@@ -160,7 +160,7 @@ namespace FestaGameOverlay
             // PlayerAStatusControl
             // 
             this.PlayerAStatusControl.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.PlayerAStatusControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerAStatusControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerAStatusControl.Location = new System.Drawing.Point(343, 176);
             this.PlayerAStatusControl.Name = "PlayerAStatusControl";
             this.PlayerAStatusControl.Size = new System.Drawing.Size(94, 30);
@@ -172,7 +172,7 @@ namespace FestaGameOverlay
             // PlayerAGameControl
             // 
             this.PlayerAGameControl.BackColor = System.Drawing.Color.LightCoral;
-            this.PlayerAGameControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerAGameControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerAGameControl.Location = new System.Drawing.Point(443, 176);
             this.PlayerAGameControl.Name = "PlayerAGameControl";
             this.PlayerAGameControl.Size = new System.Drawing.Size(94, 30);
@@ -184,7 +184,7 @@ namespace FestaGameOverlay
             // PlayerBGameControl
             // 
             this.PlayerBGameControl.BackColor = System.Drawing.Color.LightCoral;
-            this.PlayerBGameControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerBGameControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerBGameControl.Location = new System.Drawing.Point(443, 216);
             this.PlayerBGameControl.Name = "PlayerBGameControl";
             this.PlayerBGameControl.Size = new System.Drawing.Size(94, 30);
@@ -196,7 +196,7 @@ namespace FestaGameOverlay
             // PlayerBStatusControl
             // 
             this.PlayerBStatusControl.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.PlayerBStatusControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerBStatusControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerBStatusControl.Location = new System.Drawing.Point(343, 216);
             this.PlayerBStatusControl.Name = "PlayerBStatusControl";
             this.PlayerBStatusControl.Size = new System.Drawing.Size(94, 30);
@@ -208,7 +208,7 @@ namespace FestaGameOverlay
             // PlayerDGameControl
             // 
             this.PlayerDGameControl.BackColor = System.Drawing.Color.LightCoral;
-            this.PlayerDGameControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerDGameControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerDGameControl.Location = new System.Drawing.Point(443, 296);
             this.PlayerDGameControl.Name = "PlayerDGameControl";
             this.PlayerDGameControl.Size = new System.Drawing.Size(94, 30);
@@ -220,7 +220,7 @@ namespace FestaGameOverlay
             // PlayerDStatusControl
             // 
             this.PlayerDStatusControl.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.PlayerDStatusControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerDStatusControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerDStatusControl.Location = new System.Drawing.Point(343, 296);
             this.PlayerDStatusControl.Name = "PlayerDStatusControl";
             this.PlayerDStatusControl.Size = new System.Drawing.Size(94, 30);
@@ -232,7 +232,7 @@ namespace FestaGameOverlay
             // PlayerCGameControl
             // 
             this.PlayerCGameControl.BackColor = System.Drawing.Color.LightCoral;
-            this.PlayerCGameControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerCGameControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerCGameControl.Location = new System.Drawing.Point(443, 256);
             this.PlayerCGameControl.Name = "PlayerCGameControl";
             this.PlayerCGameControl.Size = new System.Drawing.Size(94, 30);
@@ -244,7 +244,7 @@ namespace FestaGameOverlay
             // PlayerCStatusControl
             // 
             this.PlayerCStatusControl.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.PlayerCStatusControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerCStatusControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerCStatusControl.Location = new System.Drawing.Point(343, 256);
             this.PlayerCStatusControl.Name = "PlayerCStatusControl";
             this.PlayerCStatusControl.Size = new System.Drawing.Size(94, 30);
@@ -256,7 +256,7 @@ namespace FestaGameOverlay
             // PlayerEGameControl
             // 
             this.PlayerEGameControl.BackColor = System.Drawing.Color.LightCoral;
-            this.PlayerEGameControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerEGameControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerEGameControl.Location = new System.Drawing.Point(443, 336);
             this.PlayerEGameControl.Name = "PlayerEGameControl";
             this.PlayerEGameControl.Size = new System.Drawing.Size(94, 30);
@@ -268,7 +268,7 @@ namespace FestaGameOverlay
             // PlayerEStatusControl
             // 
             this.PlayerEStatusControl.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.PlayerEStatusControl.Font = new System.Drawing.Font("넥슨Lv2고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerEStatusControl.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerEStatusControl.Location = new System.Drawing.Point(343, 336);
             this.PlayerEStatusControl.Name = "PlayerEStatusControl";
             this.PlayerEStatusControl.Size = new System.Drawing.Size(94, 30);
@@ -279,7 +279,7 @@ namespace FestaGameOverlay
             // 
             // OpenOverlay
             // 
-            this.OpenOverlay.Font = new System.Drawing.Font("넥슨Lv2고딕", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenOverlay.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.OpenOverlay.Location = new System.Drawing.Point(152, 389);
             this.OpenOverlay.Name = "OpenOverlay";
             this.OpenOverlay.Size = new System.Drawing.Size(385, 56);

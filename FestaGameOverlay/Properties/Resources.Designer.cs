@@ -63,9 +63,9 @@ namespace FestaGameOverlay.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        public static byte[] NEXON_Lv2_Gothic {
+        public static byte[] Pretendard_Black {
             get {
-                object obj = ResourceManager.GetObject("NEXON_Lv2_Gothic", resourceCulture);
+                object obj = ResourceManager.GetObject("Pretendard_Black", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,33 +73,19 @@ namespace FestaGameOverlay.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        public static byte[] NEXON_Lv2_Gothic_Bold {
+        public static byte[] Pretendard_Light {
             get {
-                object obj = ResourceManager.GetObject("NEXON_Lv2_Gothic_Bold", resourceCulture);
+                object obj = ResourceManager.GetObject("Pretendard_Light", resourceCulture);
                 return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   - 제공되는 모든 서체의 지적 재산권을 포함한 모든 권리는 (주)넥슨코리아에 있습니다.
-        ///- 서체는 개인 및 기업 사용자를 포함한 모든 사용자에게 무료로 제공되며 자유롭게 사용 및 배포하실 수 있습니다. (상업적인 용도로 사용 가능)
-        ///단, 임의로 수정, 편집 등을 할 수 없으며 배포되는 형태 그대로 사용해야 합니다. 글꼴 자체를 유료로 판매되는 것은 금지되며,
-        ///- 서체의 본 저작권 안내를 포함해서 다른 소프트웨어와 번들하거나 임베디드 폰트로 사용하실 수 있습니다.
-        ///- 서체의 출처 표기를 권장합니다.
-        ///- 서체를 사용한 인쇄물, 광고물(온라인 포함)은 넥슨의 프로모션을 위해 활용될 수 있습니다.과(와) 유사한 지역화된 문자열을 찾습니다.
-        /// </summary>
-        public static string NEXON_Lv2_Gothic_LICENSE {
-            get {
-                return ResourceManager.GetString("NEXON_Lv2_Gothic_LICENSE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        public static byte[] NEXON_Lv2_Gothic_Light {
+        public static byte[] Pretendard_Regular {
             get {
-                object obj = ResourceManager.GetObject("NEXON_Lv2_Gothic_Light", resourceCulture);
+                object obj = ResourceManager.GetObject("Pretendard_Regular", resourceCulture);
                 return ((byte[])(obj));
             }
         }

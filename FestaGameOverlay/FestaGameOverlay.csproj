@@ -24,16 +24,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\NEXON Lv2 Gothic Bold.ttf">
+    <None Update="Resources\Pretendard-Black.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\NEXON Lv2 Gothic Light.ttf">
+    <None Update="Resources\Pretendard-Light.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\NEXON Lv2 Gothic.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Resources\NEXON_Lv2_Gothic_LICENSE.txt">
+    <None Update="Resources\Pretendard-Regular.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

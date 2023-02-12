@@ -1,3 +1,5 @@
+using FestaGameOverlay.Properties;
+
 namespace FestaGameOverlay
 {
     public partial class Overlay : Form
@@ -33,13 +35,13 @@ namespace FestaGameOverlay
 
         private void ResetStatusImage()
         {
-            Player1Status.Image = null;
-            Player2Status.Image = null;
+            Player1.Image = null;
+            Player2.Image = null;
         }
 
-        Player? One;
-        Player? Two;
-        List<Player>? playerList;
+        private Player? One;
+        private Player? Two;
+        private List<Player>? playerList;
 
         public Overlay()
         {
@@ -49,6 +51,13 @@ namespace FestaGameOverlay
         private void Overlay_Load(object sender, EventArgs e)
         {
             LoadFromCPanel();
+
+            // Apply Font
+            Player1.Font = Program.fontManager.ToFont(2, 25f);
+            Player2.Font = Program.fontManager.ToFont(2, 25f);
+
+            Stage.Font = Program.fontManager.ToFont(1, 38f);
+            Match.Font = Program.fontManager.ToFont(2, 25f);
         }
 
         private void UpdateOverlay_Click(object sender, EventArgs e)
@@ -65,13 +74,13 @@ namespace FestaGameOverlay
         private void Player1Win_Click(object sender, EventArgs e)
         {
             ResetStatusImage();
-            Player1Status.Image = Properties.Resources.Winner;
+            Player1.Image = Resources.Winner;
         }
 
         private void Player2Win_Click(object sender, EventArgs e)
         {
             ResetStatusImage();
-            Player2Status.Image = Properties.Resources.Winner;
+            Player2.Image = Resources.Winner;
         }
     }
 }

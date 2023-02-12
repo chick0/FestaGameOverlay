@@ -2,8 +2,8 @@ namespace FestaGameOverlay
 {
     public partial class CPanel : Form
     {
-        readonly Color Pass = Color.MediumSeaGreen;
-        readonly Color Fail = Color.LightCoral;
+        private readonly Color Pass = Color.MediumSeaGreen;
+        private readonly Color Fail = Color.LightCoral;
 
         public CPanel()
         {
@@ -216,10 +216,7 @@ namespace FestaGameOverlay
 
         private void OpenOverlay_Click(object sender, EventArgs e)
         {
-            if (Program.OpenedOverlay != null)
-            {
-                Program.OpenedOverlay.Close();
-            }
+            Program.OpenedOverlay?.Close();
 
             Program.OpenedOverlay = new Overlay();
             Program.OpenedOverlay.Show();
