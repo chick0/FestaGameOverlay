@@ -29,7 +29,11 @@ namespace FestaGameOverlay
             Player1.Text = One?.Name;
             Player2.Text = Two?.Name;
 
-            // 승리 표시 초기화
+            ResetStatusImage();
+        }
+
+        private void ResetStatusImage()
+        {
             Player1Status.Image = null;
             Player2Status.Image = null;
         }
@@ -64,13 +68,13 @@ namespace FestaGameOverlay
 
         private void Player1Win_Click(object sender, EventArgs e)
         {
-            UpdateLabel();
+            ResetStatusImage();
             Player1Status.Image = Properties.Resources.Winner;
         }
 
         private void Player2Win_Click(object sender, EventArgs e)
         {
-            UpdateLabel();
+            ResetStatusImage();
             Player2Status.Image = Properties.Resources.Winner;
         }
     }
