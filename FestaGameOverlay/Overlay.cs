@@ -58,10 +58,7 @@ namespace FestaGameOverlay
 
         private void ChangePosition_Click(object sender, EventArgs e)
         {
-            Player? tmp = One;
-            One = Two;
-            Two = tmp;
-
+            (Two, One) = (One, Two);
             UpdateLabel();
         }
 
