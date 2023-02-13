@@ -16,72 +16,41 @@ namespace FestaGameOverlay
 
         public void Render()
         {
-            // Set Text
-            PlayerA.Text = Program.A.Name;
-            PlayerB.Text = Program.B.Name;
-            PlayerC.Text = Program.C.Name;
-            PlayerD.Text = Program.D.Name;
-            PlayerE.Text = Program.E.Name;
+            Player[] players = new Player[] { Program.A, Program.B, Program.C, Program.D, Program.E };
 
-            // Set Status
-            if (Program.A.Status == true)
-            {
-                PlayerA.BackColor = ColorA;
-                PlayerA.Image?.Dispose();
-                PlayerA.Image = null;
-            }
-            else
-            {
-                PlayerA.BackColor = Fail;
-                PlayerA.Image = Properties.Resources.BAN_RED_MINI;
-            }
+            Label[] pLabel = new Label[] { PlayerA, PlayerB, PlayerC, PlayerD, PlayerE };
+            Color[] colors = new Color[] { ColorA, ColorB, ColorC, ColorD, ColorE };
 
-            if (Program.B.Status == true)
-            {
-                PlayerB.BackColor = ColorB;
-                PlayerB.Image?.Dispose();
-                PlayerB.Image = null;
-            }
-            else
-            {
-                PlayerB.BackColor = Fail;
-                PlayerB.Image = Properties.Resources.BAN_RED_MINI;
-            }
+            PictureBox[] pBox = new PictureBox[] { PicA, PicB, PicC, PicD, PicE };
 
-            if (Program.C.Status == true)
+            for (int index = 0; index < players.Length; index++)
             {
-                PlayerC.BackColor = ColorC;
-                PlayerC.Image?.Dispose();
-                PlayerC.Image = null;
-            }
-            else
-            {
-                PlayerC.BackColor = Fail;
-                PlayerC.Image = Properties.Resources.BAN_RED_MINI;
-            }
+                Player player = players[index];
 
-            if (Program.D.Status == true)
-            {
-                PlayerD.BackColor = ColorD;
-                PlayerD.Image?.Dispose();
-                PlayerD.Image = null;
-            }
-            else
-            {
-                PlayerD.BackColor = Fail;
-                PlayerD.Image = Properties.Resources.BAN_RED_MINI;
-            }
+                Label label = pLabel[index];
+                Color color = colors[index];
 
-            if (Program.E.Status == true)
-            {
-                PlayerE.BackColor = ColorE;
-                PlayerE.Image?.Dispose();
-                PlayerE.Image = null;
-            }
-            else
-            {
-                PlayerE.BackColor = Fail;
-                PlayerE.Image = Properties.Resources.BAN_RED_MINI;
+                PictureBox box = pBox[index];
+
+                // Update Label text
+                label.Text = player.Name;
+
+                // Set box Parent to label
+                box.Parent = label;
+                //box.BackColor = Fail;
+
+                // Update Status
+                if (player.Status == true)
+                {
+                    label.BackColor = color;
+                    box.Location = new(200 * index, 120);
+                }
+                else
+                {
+                    label.BackColor = Fail;
+                    box.Location = new(200 * index, 0);
+                }
+
             }
         }
 

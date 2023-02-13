@@ -71,16 +71,6 @@ namespace FestaGameOverlay.Properties {
         }
         
         /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        public static System.Drawing.Bitmap BAN_RED_MINI {
-            get {
-                object obj = ResourceManager.GetObject("BAN_RED_MINI", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         public static byte[] Pretendard_Black {

@@ -35,7 +35,7 @@ namespace FestaGameOverlay
         private static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+            _ = Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
             Application.Run(new CPanel());
         }
     }
