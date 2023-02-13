@@ -4,7 +4,16 @@ namespace FestaGameOverlay
 {
     public partial class Overlay : Form
     {
-        private void LoadFromCPanel()
+        private Player? One;
+        private Player? Two;
+        private List<Player>? playerList;
+
+        public Overlay()
+        {
+            InitializeComponent();
+        }
+
+        public void LoadFromCPanel()
         {
             // 플레이어 목록 불러오기
             playerList = new List<Player>() { Program.A, Program.B, Program.C, Program.D, Program.E };
@@ -12,7 +21,18 @@ namespace FestaGameOverlay
 
             if (playerList.Count != 2)
             {
-                Program.OpenedOverlay?.Close();
+                var result = MessageBox.Show(
+                    "오버레이를 실행하려면 두 명의 선수를 선택해야합니다.",
+                    "경고",
+                    MessageBoxButtons.OKCancel,
+                    MessageBoxIcon.Warning
+                );
+
+                if (result == DialogResult.OK || One == null)
+                {
+                    Program.OpenedOverlay?.Close();
+                }
+
                 return;
             }
 
@@ -20,6 +40,26 @@ namespace FestaGameOverlay
             Two = playerList[1];
 
             UpdateLabel();
+        }
+
+        public void ChangeOneTwo()
+        {
+            (Two, One) = (One, Two);
+            UpdateLabel();
+        }
+
+        public void PlayerWin(int playerId)
+        {
+            ResetStatusImage();
+
+            if (playerId == 1)
+            {
+                Player1.Image = Resources.Winner;
+            }
+            else if (playerId == 2)
+            {
+                Player2.Image = Resources.Winner;
+            }
         }
 
         private void UpdateLabel()
@@ -39,15 +79,6 @@ namespace FestaGameOverlay
             Player2.Image = null;
         }
 
-        private Player? One;
-        private Player? Two;
-        private List<Player>? playerList;
-
-        public Overlay()
-        {
-            InitializeComponent();
-        }
-
         private void Overlay_Load(object sender, EventArgs e)
         {
             LoadFromCPanel();
@@ -60,27 +91,9 @@ namespace FestaGameOverlay
             Match.Font = Program.fontManager.ToFont(2, 25f);
         }
 
-        private void UpdateOverlay_Click(object sender, EventArgs e)
+        private void Overlay_Closing(object sender, EventArgs e)
         {
-            LoadFromCPanel();
-        }
-
-        private void ChangePosition_Click(object sender, EventArgs e)
-        {
-            (Two, One) = (One, Two);
-            UpdateLabel();
-        }
-
-        private void Player1Win_Click(object sender, EventArgs e)
-        {
-            ResetStatusImage();
-            Player1.Image = Resources.Winner;
-        }
-
-        private void Player2Win_Click(object sender, EventArgs e)
-        {
-            ResetStatusImage();
-            Player2.Image = Resources.Winner;
+            Program.OpenedOverlay = null;
         }
     }
 }

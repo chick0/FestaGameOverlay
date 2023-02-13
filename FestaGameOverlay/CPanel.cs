@@ -221,5 +221,42 @@ namespace FestaGameOverlay
             Program.OpenedOverlay = new Overlay();
             Program.OpenedOverlay.Show();
         }
+
+        private void CheckOverlay()
+        {
+            if (Program.OpenedOverlay == null)
+            {
+                _ = MessageBox.Show(
+                    "오버레이가 활성화되어 있지 않습니다.",
+                    "경고",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
+        }
+
+        private void UpdateOverlay_Click(object sender, EventArgs e)
+        {
+            CheckOverlay();
+            Program.OpenedOverlay?.LoadFromCPanel();
+        }
+
+        private void ChangePosition_Click(object sender, EventArgs e)
+        {
+            CheckOverlay();
+            Program.OpenedOverlay?.ChangeOneTwo();
+        }
+
+        private void Player1Win_Click(object sender, EventArgs e)
+        {
+            CheckOverlay();
+            Program.OpenedOverlay?.PlayerWin(1);
+        }
+
+        private void Player2Win_Click(object sender, EventArgs e)
+        {
+            CheckOverlay();
+            Program.OpenedOverlay?.PlayerWin(2);
+        }
     }
 }
