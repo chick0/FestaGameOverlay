@@ -21,7 +21,7 @@ namespace FestaGameOverlay
 
             if (playerList.Count != 2)
             {
-                var result = MessageBox.Show(
+                DialogResult result = MessageBox.Show(
                     "오버레이를 실행하려면 두 명의 선수를 선택해야합니다.",
                     "경고",
                     MessageBoxButtons.OKCancel,
