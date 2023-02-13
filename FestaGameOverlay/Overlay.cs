@@ -1,5 +1,3 @@
-using FestaGameOverlay.Properties;
-
 namespace FestaGameOverlay
 {
     public partial class Overlay : Form
@@ -11,7 +9,18 @@ namespace FestaGameOverlay
         public Overlay()
         {
             InitializeComponent();
-            InitStatusImage();
+
+            // Set SizeMode
+            Status.SizeMode = PictureBoxSizeMode.Zoom;
+
+            // Set Font
+            Player1.Font = Program.fontManager.ToFont(2, 25f);
+            Player2.Font = Program.fontManager.ToFont(2, 25f);
+
+            Stage.Font = Program.fontManager.ToFont(1, 38f);
+            Match.Font = Program.fontManager.ToFont(2, 25f);
+
+            LoadFromCPanel();
         }
 
         public void LoadFromCPanel()
@@ -55,14 +64,14 @@ namespace FestaGameOverlay
 
             if (playerId == 1)
             {
-                Status.Location = Player1.Location;
-                Status.BackColor = Player1.BackColor;
+                Status.Parent = Player1;
             }
             else if (playerId == 2)
             {
-                Status.Location = Player2.Location;
-                Status.BackColor = Player2.BackColor;
+                Status.Parent = Player2;
             }
+
+            Status.Location = new(0, 0);
         }
 
         private void UpdateLabel()
@@ -76,27 +85,9 @@ namespace FestaGameOverlay
             ResetStatusImage();
         }
 
-        private void InitStatusImage()
-        {
-            Status.SizeMode = PictureBoxSizeMode.Zoom;
-            Status.Image = Resources.Winner;
-        }
-
         private void ResetStatusImage()
         {
             Status.Location = new(0, 120);
-        }
-
-        private void Overlay_Load(object sender, EventArgs e)
-        {
-            LoadFromCPanel();
-
-            // Apply Font
-            Player1.Font = Program.fontManager.ToFont(2, 25f);
-            Player2.Font = Program.fontManager.ToFont(2, 25f);
-
-            Stage.Font = Program.fontManager.ToFont(1, 38f);
-            Match.Font = Program.fontManager.ToFont(2, 25f);
         }
 
         private void Overlay_Closing(object sender, EventArgs e)

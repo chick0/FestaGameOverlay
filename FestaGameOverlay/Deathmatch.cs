@@ -12,6 +12,29 @@ namespace FestaGameOverlay
         public Deathmatch()
         {
             InitializeComponent();
+
+            // Set Font
+            PlayerA.Font = Program.fontManager.ToFont(2, 25f);
+            PlayerB.Font = Program.fontManager.ToFont(2, 25f);
+            PlayerC.Font = Program.fontManager.ToFont(2, 25f);
+            PlayerD.Font = Program.fontManager.ToFont(2, 25f);
+            PlayerE.Font = Program.fontManager.ToFont(2, 25f);
+
+            // Set Parent
+            PicA.Parent = PlayerA;
+            PicB.Parent = PlayerB;
+            PicC.Parent = PlayerC;
+            PicD.Parent = PlayerD;
+            PicE.Parent = PlayerE;
+
+            // Set SizeMode
+            PicA.SizeMode = PictureBoxSizeMode.Zoom;
+            PicB.SizeMode = PictureBoxSizeMode.Zoom;
+            PicC.SizeMode = PictureBoxSizeMode.Zoom;
+            PicD.SizeMode = PictureBoxSizeMode.Zoom;
+            PicE.SizeMode = PictureBoxSizeMode.Zoom;
+
+            Render();
         }
 
         public void Render()
@@ -35,35 +58,19 @@ namespace FestaGameOverlay
                 // Update Label text
                 label.Text = player.Name;
 
-                // Set box Parent to label
-                box.Parent = label;
-                //box.BackColor = Fail;
-
                 // Update Status
                 if (player.Status == true)
                 {
                     label.BackColor = color;
-                    box.Location = new(200 * index, 120);
+                    box.Location = new(0, 120);
                 }
                 else
                 {
                     label.BackColor = Fail;
-                    box.Location = new(200 * index, 0);
+                    box.Location = new(0, 0);
                 }
 
             }
-        }
-
-        private void Deathmatch_Load(object sender, EventArgs e)
-        {
-            Render();
-
-            // Apply Font
-            PlayerA.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerB.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerC.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerD.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerE.Font = Program.fontManager.ToFont(2, 25f);
         }
 
         private void Deathmatch_Closing(object sender, EventArgs e)

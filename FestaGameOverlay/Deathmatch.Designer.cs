@@ -108,8 +108,7 @@ namespace FestaGameOverlay
             // PicA
             // 
             this.PicA.BackColor = System.Drawing.Color.Transparent;
-            this.PicA.BackgroundImage = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicA.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
             this.PicA.Location = new System.Drawing.Point(0, 120);
             this.PicA.Name = "PicA";
             this.PicA.Size = new System.Drawing.Size(200, 120);
@@ -119,8 +118,7 @@ namespace FestaGameOverlay
             // PicB
             // 
             this.PicB.BackColor = System.Drawing.Color.Transparent;
-            this.PicB.BackgroundImage = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicB.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
             this.PicB.Location = new System.Drawing.Point(200, 120);
             this.PicB.Name = "PicB";
             this.PicB.Size = new System.Drawing.Size(200, 120);
@@ -130,8 +128,7 @@ namespace FestaGameOverlay
             // PicC
             // 
             this.PicC.BackColor = System.Drawing.Color.Transparent;
-            this.PicC.BackgroundImage = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicC.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
             this.PicC.Location = new System.Drawing.Point(400, 120);
             this.PicC.Name = "PicC";
             this.PicC.Size = new System.Drawing.Size(200, 120);
@@ -141,8 +138,7 @@ namespace FestaGameOverlay
             // PicD
             // 
             this.PicD.BackColor = System.Drawing.Color.Transparent;
-            this.PicD.BackgroundImage = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicD.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
             this.PicD.Location = new System.Drawing.Point(600, 120);
             this.PicD.Name = "PicD";
             this.PicD.Size = new System.Drawing.Size(200, 120);
@@ -152,8 +148,7 @@ namespace FestaGameOverlay
             // PicE
             // 
             this.PicE.BackColor = System.Drawing.Color.Transparent;
-            this.PicE.BackgroundImage = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicE.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
             this.PicE.Location = new System.Drawing.Point(800, 120);
             this.PicE.Name = "PicE";
             this.PicE.Size = new System.Drawing.Size(200, 120);
@@ -182,7 +177,6 @@ namespace FestaGameOverlay
             this.ShowIcon = false;
             this.Text = "데스메치 오버레이";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Deathmatch_Closing);
-            this.Load += new System.EventHandler(this.Deathmatch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicC)).EndInit();

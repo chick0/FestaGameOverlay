@@ -100,6 +100,7 @@ namespace FestaGameOverlay
             // Status
             // 
             this.Status.BackColor = System.Drawing.Color.Transparent;
+            this.Status.Image = global::FestaGameOverlay.Properties.Resources.Winner;
             this.Status.Location = new System.Drawing.Point(0, 120);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(200, 120);
@@ -124,7 +125,6 @@ namespace FestaGameOverlay
             this.ShowIcon = false;
             this.Text = "경기 오버레이";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Overlay_Closing);
-            this.Load += new System.EventHandler(this.Overlay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Status)).EndInit();
             this.ResumeLayout(false);
 
