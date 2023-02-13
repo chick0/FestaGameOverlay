@@ -360,7 +360,7 @@ namespace FestaGameOverlay
             this.DoCollect.Name = "DoCollect";
             this.DoCollect.Size = new System.Drawing.Size(108, 31);
             this.DoCollect.TabIndex = 29;
-            this.DoCollect.Text = "메모리 청소";
+            this.DoCollect.Text = "메모리 정리";
             this.DoCollect.UseVisualStyleBackColor = true;
             this.DoCollect.Click += new System.EventHandler(this.DoCollect_Click);
             // 
