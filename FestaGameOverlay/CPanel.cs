@@ -155,7 +155,6 @@ namespace FestaGameOverlay
                 PlayerCGameControl.BackColor = Pass;
                 PlayerCGameControl.Text = "출전";
             }
-
         }
 
         private void PlayerDStatusControl_Click(object sender, EventArgs e)
@@ -279,6 +278,12 @@ namespace FestaGameOverlay
 
             Program.OpenedDeathmatch = new();
             Program.OpenedDeathmatch.Show();
+        }
+
+        private void DoCollect_Click(object sender, EventArgs e)
+        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
         }
     }
 }

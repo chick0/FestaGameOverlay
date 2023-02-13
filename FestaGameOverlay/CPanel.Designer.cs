@@ -55,6 +55,7 @@ namespace FestaGameOverlay
             this.ChangePosition = new System.Windows.Forms.Button();
             this.UpdateOverlay = new System.Windows.Forms.Button();
             this.OpenDeathmatch = new System.Windows.Forms.Button();
+            this.DoCollect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StageLabel
@@ -352,12 +353,24 @@ namespace FestaGameOverlay
             this.OpenDeathmatch.UseVisualStyleBackColor = true;
             this.OpenDeathmatch.Click += new System.EventHandler(this.OpenDeathmatch_Click);
             // 
+            // DoCollect
+            // 
+            this.DoCollect.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DoCollect.Location = new System.Drawing.Point(12, 294);
+            this.DoCollect.Name = "DoCollect";
+            this.DoCollect.Size = new System.Drawing.Size(108, 31);
+            this.DoCollect.TabIndex = 29;
+            this.DoCollect.Text = "메모리 청소";
+            this.DoCollect.UseVisualStyleBackColor = true;
+            this.DoCollect.Click += new System.EventHandler(this.DoCollect_Click);
+            // 
             // CPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(767, 343);
+            this.Controls.Add(this.DoCollect);
             this.Controls.Add(this.OpenDeathmatch);
             this.Controls.Add(this.UpdateOverlay);
             this.Controls.Add(this.Player2Win);
@@ -424,5 +437,6 @@ namespace FestaGameOverlay
         private Button ChangePosition;
         private Button UpdateOverlay;
         private Button OpenDeathmatch;
+        private Button DoCollect;
     }
 }
