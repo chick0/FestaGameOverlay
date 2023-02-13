@@ -33,6 +33,8 @@ namespace FestaGameOverlay
             this.Player2 = new System.Windows.Forms.Label();
             this.Stage = new System.Windows.Forms.Label();
             this.Match = new System.Windows.Forms.Label();
+            this.Status = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Status)).BeginInit();
             this.SuspendLayout();
             // 
             // OverlayBackground
@@ -95,12 +97,22 @@ namespace FestaGameOverlay
             this.Match.Text = "토너먼트 1경기";
             this.Match.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Status
+            // 
+            this.Status.BackColor = System.Drawing.Color.Transparent;
+            this.Status.Location = new System.Drawing.Point(0, 120);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(200, 120);
+            this.Status.TabIndex = 14;
+            this.Status.TabStop = false;
+            // 
             // Overlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(760, 120);
+            this.Controls.Add(this.Status);
             this.Controls.Add(this.Match);
             this.Controls.Add(this.Stage);
             this.Controls.Add(this.Player2);
@@ -113,6 +125,7 @@ namespace FestaGameOverlay
             this.Text = "경기 오버레이";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Overlay_Closing);
             this.Load += new System.EventHandler(this.Overlay_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Status)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,5 +137,6 @@ namespace FestaGameOverlay
         private Label Player2;
         private Label Stage;
         private Label Match;
+        private PictureBox Status;
     }
 }

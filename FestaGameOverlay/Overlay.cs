@@ -11,6 +11,7 @@ namespace FestaGameOverlay
         public Overlay()
         {
             InitializeComponent();
+            InitStatusImage();
         }
 
         public void LoadFromCPanel()
@@ -54,11 +55,13 @@ namespace FestaGameOverlay
 
             if (playerId == 1)
             {
-                Player1.Image = Resources.Winner;
+                Status.Location = Player1.Location;
+                Status.BackColor = Player1.BackColor;
             }
             else if (playerId == 2)
             {
-                Player2.Image = Resources.Winner;
+                Status.Location = Player2.Location;
+                Status.BackColor = Player2.BackColor;
             }
         }
 
@@ -73,13 +76,15 @@ namespace FestaGameOverlay
             ResetStatusImage();
         }
 
+        private void InitStatusImage()
+        {
+            Status.SizeMode = PictureBoxSizeMode.Zoom;
+            Status.Image = Resources.Winner;
+        }
+
         private void ResetStatusImage()
         {
-            Player1.Image?.Dispose();
-            Player1.Image = null;
-
-            Player2.Image?.Dispose();
-            Player2.Image = null;
+            Status.Location = new(0, 120);
         }
 
         private void Overlay_Load(object sender, EventArgs e)
