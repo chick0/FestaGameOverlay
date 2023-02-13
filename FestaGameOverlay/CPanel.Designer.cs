@@ -349,7 +349,7 @@ namespace FestaGameOverlay
             this.OpenDeathmatch.Name = "OpenDeathmatch";
             this.OpenDeathmatch.Size = new System.Drawing.Size(210, 41);
             this.OpenDeathmatch.TabIndex = 28;
-            this.OpenDeathmatch.Text = "대스매치 오버레이";
+            this.OpenDeathmatch.Text = "데스매치 오버레이";
             this.OpenDeathmatch.UseVisualStyleBackColor = true;
             this.OpenDeathmatch.Click += new System.EventHandler(this.OpenDeathmatch_Click);
             // 
