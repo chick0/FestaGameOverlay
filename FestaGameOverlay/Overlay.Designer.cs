@@ -110,10 +110,11 @@ namespace FestaGameOverlay
             this.MinimizeBox = false;
             this.Name = "Overlay";
             this.ShowIcon = false;
-            this.Text = "오버레이";
+            this.Text = "경기 오버레이";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Overlay_Closing);
             this.Load += new System.EventHandler(this.Overlay_Load);
-            this.FormClosing += new FormClosingEventHandler(this.Overlay_Closing);
             this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -27,6 +27,7 @@ namespace FestaGameOverlay
         public static Player E = new();
 
         public static Overlay? OpenedOverlay = null;
+        public static Deathmatch? OpenedDeathmatch = null;
 
         public static FontManager fontManager = new();
 

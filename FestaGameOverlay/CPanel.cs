@@ -28,26 +28,31 @@ namespace FestaGameOverlay
         private void PlayerA_TextChanged(object sender, EventArgs e)
         {
             Program.A.Name = PlayerA.Text;
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerB_TextChanged(object sender, EventArgs e)
         {
             Program.B.Name = PlayerB.Text;
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerC_TextChanged(object sender, EventArgs e)
         {
             Program.C.Name = PlayerC.Text;
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerD_TextChanged(object sender, EventArgs e)
         {
             Program.D.Name = PlayerD.Text;
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerE_TextChanged(object sender, EventArgs e)
         {
             Program.E.Name = PlayerE.Text;
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerAStatusControl_Click(object sender, EventArgs e)
@@ -64,6 +69,8 @@ namespace FestaGameOverlay
                 PlayerAStatusControl.BackColor = Pass;
                 PlayerAStatusControl.Text = "생존";
             }
+
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerAGameControl_Click(object sender, EventArgs e)
@@ -96,6 +103,8 @@ namespace FestaGameOverlay
                 PlayerBStatusControl.BackColor = Pass;
                 PlayerBStatusControl.Text = "생존";
             }
+
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerBGameControl_Click(object sender, EventArgs e)
@@ -112,7 +121,6 @@ namespace FestaGameOverlay
                 PlayerBGameControl.BackColor = Pass;
                 PlayerBGameControl.Text = "출전";
             }
-
         }
 
         private void PlayerCStatusControl_Click(object sender, EventArgs e)
@@ -129,6 +137,8 @@ namespace FestaGameOverlay
                 PlayerCStatusControl.BackColor = Pass;
                 PlayerCStatusControl.Text = "생존";
             }
+
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerCGameControl_Click(object sender, EventArgs e)
@@ -162,6 +172,8 @@ namespace FestaGameOverlay
                 PlayerDStatusControl.BackColor = Pass;
                 PlayerDStatusControl.Text = "생존";
             }
+
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerDGameControl_Click(object sender, EventArgs e)
@@ -195,6 +207,8 @@ namespace FestaGameOverlay
                 PlayerEStatusControl.BackColor = Pass;
                 PlayerEStatusControl.Text = "생존";
             }
+
+            Program.OpenedDeathmatch?.Render();
         }
 
         private void PlayerEGameControl_Click(object sender, EventArgs e)
@@ -218,7 +232,7 @@ namespace FestaGameOverlay
         {
             Program.OpenedOverlay?.Close();
 
-            Program.OpenedOverlay = new Overlay();
+            Program.OpenedOverlay = new();
             Program.OpenedOverlay.Show();
         }
 
@@ -257,6 +271,14 @@ namespace FestaGameOverlay
         {
             CheckOverlay();
             Program.OpenedOverlay?.PlayerWin(2);
+        }
+
+        private void OpenDeathmatch_Click(object sender, EventArgs e)
+        {
+            Program.OpenedDeathmatch?.Close();
+
+            Program.OpenedDeathmatch = new();
+            Program.OpenedDeathmatch.Show();
         }
     }
 }

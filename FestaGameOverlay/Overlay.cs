@@ -75,7 +75,10 @@ namespace FestaGameOverlay
 
         private void ResetStatusImage()
         {
+            Player1.Image?.Dispose();
             Player1.Image = null;
+
+            Player2.Image?.Dispose();
             Player2.Image = null;
         }
 

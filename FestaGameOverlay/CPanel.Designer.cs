@@ -54,6 +54,7 @@ namespace FestaGameOverlay
             this.Player1Win = new System.Windows.Forms.Button();
             this.ChangePosition = new System.Windows.Forms.Button();
             this.UpdateOverlay = new System.Windows.Forms.Button();
+            this.OpenDeathmatch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StageLabel
@@ -284,11 +285,11 @@ namespace FestaGameOverlay
             // OpenOverlay
             // 
             this.OpenOverlay.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenOverlay.Location = new System.Drawing.Point(545, 47);
+            this.OpenOverlay.Location = new System.Drawing.Point(544, 15);
             this.OpenOverlay.Name = "OpenOverlay";
-            this.OpenOverlay.Size = new System.Drawing.Size(210, 56);
+            this.OpenOverlay.Size = new System.Drawing.Size(210, 41);
             this.OpenOverlay.TabIndex = 22;
-            this.OpenOverlay.Text = "오버레이 실행";
+            this.OpenOverlay.Text = "경기 오버레이";
             this.OpenOverlay.UseVisualStyleBackColor = true;
             this.OpenOverlay.Click += new System.EventHandler(this.OpenOverlay_Click);
             // 
@@ -297,7 +298,7 @@ namespace FestaGameOverlay
             this.Player2Win.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(74)))), ((int)(((byte)(46)))));
             this.Player2Win.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Player2Win.ForeColor = System.Drawing.Color.White;
-            this.Player2Win.Location = new System.Drawing.Point(652, 269);
+            this.Player2Win.Location = new System.Drawing.Point(653, 268);
             this.Player2Win.Name = "Player2Win";
             this.Player2Win.Size = new System.Drawing.Size(102, 56);
             this.Player2Win.TabIndex = 26;
@@ -310,7 +311,7 @@ namespace FestaGameOverlay
             this.Player1Win.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(169)))), ((int)(((byte)(194)))));
             this.Player1Win.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Player1Win.ForeColor = System.Drawing.Color.White;
-            this.Player1Win.Location = new System.Drawing.Point(545, 269);
+            this.Player1Win.Location = new System.Drawing.Point(544, 268);
             this.Player1Win.Name = "Player1Win";
             this.Player1Win.Size = new System.Drawing.Size(102, 56);
             this.Player1Win.TabIndex = 25;
@@ -321,9 +322,9 @@ namespace FestaGameOverlay
             // ChangePosition
             // 
             this.ChangePosition.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChangePosition.Location = new System.Drawing.Point(545, 191);
+            this.ChangePosition.Location = new System.Drawing.Point(543, 210);
             this.ChangePosition.Name = "ChangePosition";
-            this.ChangePosition.Size = new System.Drawing.Size(210, 56);
+            this.ChangePosition.Size = new System.Drawing.Size(210, 41);
             this.ChangePosition.TabIndex = 23;
             this.ChangePosition.Text = "참가자 순서 바꾸기";
             this.ChangePosition.UseVisualStyleBackColor = true;
@@ -332,13 +333,24 @@ namespace FestaGameOverlay
             // UpdateOverlay
             // 
             this.UpdateOverlay.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UpdateOverlay.Location = new System.Drawing.Point(545, 134);
+            this.UpdateOverlay.Location = new System.Drawing.Point(544, 163);
             this.UpdateOverlay.Name = "UpdateOverlay";
-            this.UpdateOverlay.Size = new System.Drawing.Size(209, 51);
+            this.UpdateOverlay.Size = new System.Drawing.Size(209, 41);
             this.UpdateOverlay.TabIndex = 27;
-            this.UpdateOverlay.Text = "설정 불러오기";
+            this.UpdateOverlay.Text = "경기 오버레이 업데이트";
             this.UpdateOverlay.UseVisualStyleBackColor = true;
             this.UpdateOverlay.Click += new System.EventHandler(this.UpdateOverlay_Click);
+            // 
+            // OpenDeathmatch
+            // 
+            this.OpenDeathmatch.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenDeathmatch.Location = new System.Drawing.Point(544, 62);
+            this.OpenDeathmatch.Name = "OpenDeathmatch";
+            this.OpenDeathmatch.Size = new System.Drawing.Size(210, 41);
+            this.OpenDeathmatch.TabIndex = 28;
+            this.OpenDeathmatch.Text = "대스매치 오버레이";
+            this.OpenDeathmatch.UseVisualStyleBackColor = true;
+            this.OpenDeathmatch.Click += new System.EventHandler(this.OpenDeathmatch_Click);
             // 
             // CPanel
             // 
@@ -346,6 +358,7 @@ namespace FestaGameOverlay
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(767, 343);
+            this.Controls.Add(this.OpenDeathmatch);
             this.Controls.Add(this.UpdateOverlay);
             this.Controls.Add(this.Player2Win);
             this.Controls.Add(this.Player1Win);
@@ -410,5 +423,6 @@ namespace FestaGameOverlay
         private Button Player1Win;
         private Button ChangePosition;
         private Button UpdateOverlay;
+        private Button OpenDeathmatch;
     }
 }
