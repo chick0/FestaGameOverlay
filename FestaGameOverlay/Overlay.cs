@@ -14,11 +14,11 @@ namespace FestaGameOverlay
             Status.SizeMode = PictureBoxSizeMode.Zoom;
 
             // Set Font
-            Player1.Font = Program.fontManager.ToFont(FontId.Light, 25f);
-            Player2.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            Player1.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+            Player2.Font = Program.fontManager.ToFont(FontId.Light, 45f);
 
-            Stage.Font = Program.fontManager.ToFont(FontId.Black, 40f);
-            Match.Font = Program.fontManager.ToFont(FontId.Default, 30f);
+            Stage.Font = Program.fontManager.ToFont(FontId.Black, 70f);
+            Match.Font = Program.fontManager.ToFont(FontId.Default, 45f);
 
             LoadFromCPanel();
         }
@@ -82,7 +82,7 @@ namespace FestaGameOverlay
 
         private void ResetStatusImage()
         {
-            Status.Location = new(0, 120);
+            Status.Location = new(0, 200);
         }
 
         private void Overlay_Closing(object sender, EventArgs e)

@@ -52,7 +52,7 @@ namespace FestaGameOverlay
             this.PlayerA.Location = new System.Drawing.Point(0, 0);
             this.PlayerA.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerA.Name = "PlayerA";
-            this.PlayerA.Size = new System.Drawing.Size(200, 120);
+            this.PlayerA.Size = new System.Drawing.Size(333, 200);
             this.PlayerA.TabIndex = 0;
             this.PlayerA.Text = "PlayerName";
             this.PlayerA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,10 +61,10 @@ namespace FestaGameOverlay
             // 
             this.PlayerB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(64)))));
             this.PlayerB.ForeColor = System.Drawing.Color.White;
-            this.PlayerB.Location = new System.Drawing.Point(200, 0);
+            this.PlayerB.Location = new System.Drawing.Point(333, 0);
             this.PlayerB.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerB.Name = "PlayerB";
-            this.PlayerB.Size = new System.Drawing.Size(200, 120);
+            this.PlayerB.Size = new System.Drawing.Size(333, 200);
             this.PlayerB.TabIndex = 1;
             this.PlayerB.Text = "PlayerName";
             this.PlayerB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,10 +73,10 @@ namespace FestaGameOverlay
             // 
             this.PlayerC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.PlayerC.ForeColor = System.Drawing.Color.White;
-            this.PlayerC.Location = new System.Drawing.Point(400, 0);
+            this.PlayerC.Location = new System.Drawing.Point(666, 0);
             this.PlayerC.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerC.Name = "PlayerC";
-            this.PlayerC.Size = new System.Drawing.Size(200, 120);
+            this.PlayerC.Size = new System.Drawing.Size(333, 200);
             this.PlayerC.TabIndex = 2;
             this.PlayerC.Text = "PlayerName";
             this.PlayerC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,10 +85,10 @@ namespace FestaGameOverlay
             // 
             this.PlayerD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(156)))));
             this.PlayerD.ForeColor = System.Drawing.Color.White;
-            this.PlayerD.Location = new System.Drawing.Point(600, 0);
+            this.PlayerD.Location = new System.Drawing.Point(999, 0);
             this.PlayerD.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerD.Name = "PlayerD";
-            this.PlayerD.Size = new System.Drawing.Size(200, 120);
+            this.PlayerD.Size = new System.Drawing.Size(333, 200);
             this.PlayerD.TabIndex = 3;
             this.PlayerD.Text = "PlayerName";
             this.PlayerD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,10 +97,10 @@ namespace FestaGameOverlay
             // 
             this.PlayerE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
             this.PlayerE.ForeColor = System.Drawing.Color.White;
-            this.PlayerE.Location = new System.Drawing.Point(800, 0);
+            this.PlayerE.Location = new System.Drawing.Point(1332, 0);
             this.PlayerE.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerE.Name = "PlayerE";
-            this.PlayerE.Size = new System.Drawing.Size(200, 120);
+            this.PlayerE.Size = new System.Drawing.Size(333, 200);
             this.PlayerE.TabIndex = 4;
             this.PlayerE.Text = "PlayerName";
             this.PlayerE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -109,9 +109,9 @@ namespace FestaGameOverlay
             // 
             this.PicA.BackColor = System.Drawing.Color.Transparent;
             this.PicA.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicA.Location = new System.Drawing.Point(0, 120);
+            this.PicA.Location = new System.Drawing.Point(0, 224);
             this.PicA.Name = "PicA";
-            this.PicA.Size = new System.Drawing.Size(200, 120);
+            this.PicA.Size = new System.Drawing.Size(333, 200);
             this.PicA.TabIndex = 5;
             this.PicA.TabStop = false;
             // 
@@ -119,9 +119,9 @@ namespace FestaGameOverlay
             // 
             this.PicB.BackColor = System.Drawing.Color.Transparent;
             this.PicB.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicB.Location = new System.Drawing.Point(200, 120);
+            this.PicB.Location = new System.Drawing.Point(333, 224);
             this.PicB.Name = "PicB";
-            this.PicB.Size = new System.Drawing.Size(200, 120);
+            this.PicB.Size = new System.Drawing.Size(333, 200);
             this.PicB.TabIndex = 6;
             this.PicB.TabStop = false;
             // 
@@ -129,9 +129,9 @@ namespace FestaGameOverlay
             // 
             this.PicC.BackColor = System.Drawing.Color.Transparent;
             this.PicC.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicC.Location = new System.Drawing.Point(400, 120);
+            this.PicC.Location = new System.Drawing.Point(666, 224);
             this.PicC.Name = "PicC";
-            this.PicC.Size = new System.Drawing.Size(200, 120);
+            this.PicC.Size = new System.Drawing.Size(333, 200);
             this.PicC.TabIndex = 7;
             this.PicC.TabStop = false;
             // 
@@ -139,9 +139,9 @@ namespace FestaGameOverlay
             // 
             this.PicD.BackColor = System.Drawing.Color.Transparent;
             this.PicD.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicD.Location = new System.Drawing.Point(600, 120);
+            this.PicD.Location = new System.Drawing.Point(999, 224);
             this.PicD.Name = "PicD";
-            this.PicD.Size = new System.Drawing.Size(200, 120);
+            this.PicD.Size = new System.Drawing.Size(333, 200);
             this.PicD.TabIndex = 8;
             this.PicD.TabStop = false;
             // 
@@ -149,9 +149,9 @@ namespace FestaGameOverlay
             // 
             this.PicE.BackColor = System.Drawing.Color.Transparent;
             this.PicE.Image = global::FestaGameOverlay.Properties.Resources.BAN_RED;
-            this.PicE.Location = new System.Drawing.Point(800, 120);
+            this.PicE.Location = new System.Drawing.Point(1332, 224);
             this.PicE.Name = "PicE";
-            this.PicE.Size = new System.Drawing.Size(200, 120);
+            this.PicE.Size = new System.Drawing.Size(333, 200);
             this.PicE.TabIndex = 9;
             this.PicE.TabStop = false;
             // 
@@ -160,7 +160,7 @@ namespace FestaGameOverlay
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1000, 120);
+            this.ClientSize = new System.Drawing.Size(1665, 200);
             this.Controls.Add(this.PicE);
             this.Controls.Add(this.PicD);
             this.Controls.Add(this.PicC);

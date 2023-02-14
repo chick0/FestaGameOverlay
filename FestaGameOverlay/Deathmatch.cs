@@ -14,11 +14,11 @@ namespace FestaGameOverlay
             InitializeComponent();
 
             // Set Font
-            PlayerA.Font = Program.fontManager.ToFont(FontId.Light, 25f);
-            PlayerB.Font = Program.fontManager.ToFont(FontId.Light, 25f);
-            PlayerC.Font = Program.fontManager.ToFont(FontId.Light, 25f);
-            PlayerD.Font = Program.fontManager.ToFont(FontId.Light, 25f);
-            PlayerE.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            PlayerA.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+            PlayerB.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+            PlayerC.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+            PlayerD.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+            PlayerE.Font = Program.fontManager.ToFont(FontId.Light, 45f);
 
             // Set Parent
             PicA.Parent = PlayerA;
@@ -62,7 +62,7 @@ namespace FestaGameOverlay
                 if (player.Status == true)
                 {
                     label.BackColor = color;
-                    box.Location = new(0, 120);
+                    box.Location = new(0, 200);
                 }
                 else
                 {
