@@ -48,61 +48,66 @@ namespace FestaGameOverlay
             // PlayerA
             // 
             this.PlayerA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.PlayerA.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerA.ForeColor = System.Drawing.Color.White;
             this.PlayerA.Location = new System.Drawing.Point(0, 0);
             this.PlayerA.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerA.Name = "PlayerA";
             this.PlayerA.Size = new System.Drawing.Size(333, 200);
             this.PlayerA.TabIndex = 0;
-            this.PlayerA.Text = "PlayerName";
+            this.PlayerA.Text = "Player 1";
             this.PlayerA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PlayerB
             // 
             this.PlayerB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(176)))), ((int)(((byte)(64)))));
+            this.PlayerB.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerB.ForeColor = System.Drawing.Color.White;
             this.PlayerB.Location = new System.Drawing.Point(333, 0);
             this.PlayerB.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerB.Name = "PlayerB";
             this.PlayerB.Size = new System.Drawing.Size(333, 200);
             this.PlayerB.TabIndex = 1;
-            this.PlayerB.Text = "PlayerName";
+            this.PlayerB.Text = "Player 2";
             this.PlayerB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PlayerC
             // 
             this.PlayerC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.PlayerC.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerC.ForeColor = System.Drawing.Color.White;
             this.PlayerC.Location = new System.Drawing.Point(666, 0);
             this.PlayerC.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerC.Name = "PlayerC";
             this.PlayerC.Size = new System.Drawing.Size(333, 200);
             this.PlayerC.TabIndex = 2;
-            this.PlayerC.Text = "PlayerName";
+            this.PlayerC.Text = "Player 3";
             this.PlayerC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PlayerD
             // 
             this.PlayerD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(156)))));
+            this.PlayerD.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerD.ForeColor = System.Drawing.Color.White;
             this.PlayerD.Location = new System.Drawing.Point(999, 0);
             this.PlayerD.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerD.Name = "PlayerD";
             this.PlayerD.Size = new System.Drawing.Size(333, 200);
             this.PlayerD.TabIndex = 3;
-            this.PlayerD.Text = "PlayerName";
+            this.PlayerD.Text = "Player 4";
             this.PlayerD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PlayerE
             // 
             this.PlayerE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.PlayerE.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerE.ForeColor = System.Drawing.Color.White;
             this.PlayerE.Location = new System.Drawing.Point(1332, 0);
             this.PlayerE.Margin = new System.Windows.Forms.Padding(0);
             this.PlayerE.Name = "PlayerE";
             this.PlayerE.Size = new System.Drawing.Size(333, 200);
             this.PlayerE.TabIndex = 4;
-            this.PlayerE.Text = "PlayerName";
+            this.PlayerE.Text = "Player 5";
             this.PlayerE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PicA
