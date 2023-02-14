@@ -14,11 +14,11 @@ namespace FestaGameOverlay
             Status.SizeMode = PictureBoxSizeMode.Zoom;
 
             // Set Font
-            Player1.Font = Program.fontManager.ToFont(2, 25f);
-            Player2.Font = Program.fontManager.ToFont(2, 25f);
+            Player1.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            Player2.Font = Program.fontManager.ToFont(FontId.Light, 25f);
 
-            Stage.Font = Program.fontManager.ToFont(1, 38f);
-            Match.Font = Program.fontManager.ToFont(2, 25f);
+            Stage.Font = Program.fontManager.ToFont(FontId.Black, 40f);
+            Match.Font = Program.fontManager.ToFont(FontId.Default, 30f);
 
             LoadFromCPanel();
         }

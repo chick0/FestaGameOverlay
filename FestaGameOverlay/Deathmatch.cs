@@ -14,11 +14,11 @@ namespace FestaGameOverlay
             InitializeComponent();
 
             // Set Font
-            PlayerA.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerB.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerC.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerD.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerE.Font = Program.fontManager.ToFont(2, 25f);
+            PlayerA.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            PlayerB.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            PlayerC.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            PlayerD.Font = Program.fontManager.ToFont(FontId.Light, 25f);
+            PlayerE.Font = Program.fontManager.ToFont(FontId.Light, 25f);
 
             // Set Parent
             PicA.Parent = PlayerA;
