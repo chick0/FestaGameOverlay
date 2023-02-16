@@ -130,7 +130,10 @@
   <data name="Pretendard_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pretendard-Black.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Loser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Loser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Winner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Winner.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Winner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

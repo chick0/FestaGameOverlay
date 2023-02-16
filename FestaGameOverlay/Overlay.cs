@@ -11,7 +11,12 @@ namespace FestaGameOverlay
             InitializeComponent();
 
             // Set SizeMode
-            Status.SizeMode = PictureBoxSizeMode.Zoom;
+            Status1.SizeMode = PictureBoxSizeMode.Zoom;
+            Status2.SizeMode = PictureBoxSizeMode.Zoom;
+
+            // Set Parent
+            Status1.Parent = Player1;
+            Status2.Parent = Player2;
 
             // Set Font
             Player1.Font = Program.fontManager.ToFont(FontId.Light, 45f);
@@ -59,14 +64,17 @@ namespace FestaGameOverlay
 
             if (playerId == 1)
             {
-                Status.Parent = Player1;
+                Status1.Image = Properties.Resources.Winner;
+                Status2.Image = Properties.Resources.Loser;
             }
             else if (playerId == 2)
             {
-                Status.Parent = Player2;
+                Status1.Image = Properties.Resources.Loser;
+                Status2.Image = Properties.Resources.Winner;
             }
 
-            Status.Location = new(0, 0);
+            Status1.Location = new(0, 160);
+            Status2.Location = new(0, 160);
         }
 
         private void UpdateLabel()
@@ -82,7 +90,8 @@ namespace FestaGameOverlay
 
         private void ResetStatusImage()
         {
-            Status.Location = new(0, 200);
+            Status1.Location = new(0, 200);
+            Status2.Location = new(0, 200);
         }
 
         private void Overlay_Closing(object sender, EventArgs e)

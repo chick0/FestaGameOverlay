@@ -32,8 +32,10 @@ namespace FestaGameOverlay
             this.Player2 = new System.Windows.Forms.Label();
             this.Stage = new System.Windows.Forms.Label();
             this.Match = new System.Windows.Forms.Label();
-            this.Status = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Status)).BeginInit();
+            this.Status1 = new System.Windows.Forms.PictureBox();
+            this.Status2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Status1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Status2)).BeginInit();
             this.SuspendLayout();
             // 
             // Player1
@@ -87,22 +89,31 @@ namespace FestaGameOverlay
             this.Match.Text = "토너먼트 1경기";
             this.Match.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Status
+            // Status1
             // 
-            this.Status.BackColor = System.Drawing.Color.Transparent;
-            this.Status.Image = global::FestaGameOverlay.Properties.Resources.Winner;
-            this.Status.Location = new System.Drawing.Point(0, 200);
-            this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(333, 200);
-            this.Status.TabIndex = 14;
-            this.Status.TabStop = false;
+            this.Status1.BackColor = System.Drawing.Color.Transparent;
+            this.Status1.Location = new System.Drawing.Point(0, 200);
+            this.Status1.Name = "Status1";
+            this.Status1.Size = new System.Drawing.Size(333, 40);
+            this.Status1.TabIndex = 14;
+            this.Status1.TabStop = false;
+            // 
+            // Status2
+            // 
+            this.Status2.BackColor = System.Drawing.Color.Transparent;
+            this.Status2.Location = new System.Drawing.Point(933, 200);
+            this.Status2.Name = "Status2";
+            this.Status2.Size = new System.Drawing.Size(333, 40);
+            this.Status2.TabIndex = 15;
+            this.Status2.TabStop = false;
             // 
             // Overlay
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1266, 200);
-            this.Controls.Add(this.Status);
+            this.Controls.Add(this.Status2);
+            this.Controls.Add(this.Status1);
             this.Controls.Add(this.Match);
             this.Controls.Add(this.Stage);
             this.Controls.Add(this.Player2);
@@ -113,7 +124,8 @@ namespace FestaGameOverlay
             this.ShowIcon = false;
             this.Text = "경기 오버레이";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Overlay_Closing);
-            ((System.ComponentModel.ISupportInitialize)(this.Status)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Status1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Status2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,6 +135,7 @@ namespace FestaGameOverlay
         private Label Player2;
         private Label Stage;
         private Label Match;
-        private PictureBox Status;
+        private PictureBox Status1;
+        private PictureBox Status2;
     }
 }
